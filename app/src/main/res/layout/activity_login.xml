@@ -8,46 +8,53 @@
     tools:context=".LoginActivity"
     android:background="@color/red">
 
-    <EditText
-        android:id="@+id/username1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:hint="User Name"
-        android:minHeight="48dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
-
-    <EditText
-        android:id="@+id/password1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username1"
-        android:layout_marginTop="48dp"
-        android:hint="Password"
-        android:minHeight="48dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:inputType="textPassword"
-    />
-
-    <Button
-        android:id="@+id/btnsignin1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/password1"
-        android:textColor="#90CAF9"
-        android:background="@color/red"
-        />
-
     <ImageView
-    android:id="@+id/imageView1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="-489dp"
-    app:srcCompat="@drawable/spyglass" />
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="-45dp"
+        android:scaleX="1.5"
+        android:scaleY="2"
+        android:src="@drawable/spyglass"
+        />
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <EditText
+            android:id="@+id/username1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username1"
+            android:layout_marginTop="48dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password1"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:text="Sign in"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
 
 </RelativeLayout>
