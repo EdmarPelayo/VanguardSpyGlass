@@ -13,19 +13,20 @@
         android:layout_height="300dp"
         android:layout_marginTop="-45dp"
         android:scaleX="1.5"
-        android:scaleY="2"
+        android:scaleY="1.5"
         android:src="@drawable/spyglass" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp">
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp">
 
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:hint="User Name"
             android:minHeight="48dp"
             android:textColor="@color/white"
@@ -55,27 +56,39 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
-        <Button
-            android:id="@+id/btnsignup"
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/repassword"
-            android:layout_marginTop="30dp"
-            android:background="@color/white"
-            android:text="Register"
-            android:textColor="@color/black" />
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp">
 
-        <Button
-            android:id="@+id/btnsignin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnsignup"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:text="Existing user"
-            android:textColor="@color/black" />
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/repassword"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/round_btn"
+                android:text="Register"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repassword"
+                android:layout_toRightOf="@id/btnsignup"
+                android:background="@drawable/round_btn"
+                android:text="Existing user"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
+
+
 
 
 </RelativeLayout>

@@ -13,14 +13,14 @@
         android:layout_height="300dp"
         android:layout_marginTop="-45dp"
         android:scaleX="1.5"
-        android:scaleY="2"
+        android:scaleY="1.5"
         android:src="@drawable/spyglass"
         />
     <RelativeLayout
         android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-
+        android:layout_marginTop="200dp"
         >
 
         <EditText
@@ -51,9 +51,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/password1"
             android:layout_marginTop="50dp"
-            android:background="@color/white"
+            android:background="@drawable/round_btn"
             android:text="Sign in"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+
+        />
     </RelativeLayout>
 
 
