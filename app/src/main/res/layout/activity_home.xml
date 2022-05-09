@@ -5,95 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
+    android:padding="10dp"
     >
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView1"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="8dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/carLayout">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/contactsRecView"
+        android:layout_centerHorizontal="true"
+    />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Car Goal"
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/txtGoal"
-                    android:textSize="30dp"
-
-                />
-
-
-                <ImageView
-                    android:id="@+id/carPic"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/mycarin2years" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Goal: $146,000"
-                    android:layout_above="@+id/pb"
-                    android:layout_centerHorizontal="true"
-                />
-
-
-                <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_below="@+id/carPic"
-                    android:id="@+id/pb"
-                />
-            </RelativeLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView2"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="8dp"
-            android:layout_below="@+id/cardView1">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/goal1Layout">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:text="Some Goal"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:id="@+id/goal2Txt"/>
-
-                <ImageView
-                    android:layout_marginTop="30dp"
-                    android:layout_width="250dp"
-                    android:layout_height="200dp"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/question"
-                    android:id="@+id/goal2Pic"
-                />
-
-            </RelativeLayout>
-
-        </com.google.android.material.card.MaterialCardView>/>
 
 </RelativeLayout>
